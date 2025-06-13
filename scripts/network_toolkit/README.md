@@ -22,7 +22,7 @@ python network_toolkit.py portscan --target 192.168.1.1 --ports 20-100" \
 python network_toolkit.py sniffer --count 5 \
 python network_toolkit.py dns --target example.com \
 python network_toolkit.py httplog --target https://httpbin.org/get \
-python network_toolkit.py discover --target 192.168.1.0/24 \
+python network_toolkit.py discover --target 192.168.1.0/24
 
 ## Output to File
 
