@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# A simple script to clear a working folder while keeping some files intact.
+
 import os
 import shutil
 

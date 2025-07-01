@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# A simple script to restructure a folders files.
+
 import os
 import shutil
 import fnmatch
