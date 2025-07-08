@@ -1,4 +1,4 @@
-## Basic colourized recon + parser script for nmap and gobuster with clean log output.
+## Basic colourized recon + parser script for nmap and gobuster with clean log output
 
 You can run these scripts together without any additional dependencies.
 
