@@ -4,7 +4,7 @@
 import os
 import shutil
 
-target_dir = "./"
+target_dir = "../file-ops/"
 trash_extensions = [".nmap", ".xml", ".txt", ".html"]
 trash_dirs = ["gobuster", "ffuf-output", "nmap-temp", "temp",]
 DRY_RUN = True  # Flip to False when ready
