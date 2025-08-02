@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# get-kali-tool.sh — Smart tool installer for Linux Mint with Kali + GitHub/Flatpak fallback
+# get_kali_tool.sh — Smart tool installer for Linux Mint with Kali + GitHub/Flatpak fallback
 
 # This will attempt to pull a kali package from their repo if one is not available in Mint's
 # It will fallback to check flatpak and the build from git if available
