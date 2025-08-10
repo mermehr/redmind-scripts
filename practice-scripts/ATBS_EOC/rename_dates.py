@@ -3,7 +3,7 @@
  that use American-style dates in their names (MM-DD-YYYY)
  and rename them to European-style (DD-MM-YYYY)
  """
-import os, re, shutil
+import os, re  # noqa: E401
 
 # MM-DD-YYYY pattern
 date_pattern = re.compile(r"""
@@ -30,8 +30,8 @@ def rename_dates(folder):
             after_part = mo.group(5)
 
             euro_filename = f'{before_part}{day}-{month}-{year}-{after_part}'
-            old_path = os.path.join(foldername, filenames)
-            new_path = os.path.join(foldername, euro_filename)
+            old_path = os.path.join(foldername, filenames)  # noqa: F841
+            new_path = os.path.join(foldername, euro_filename)  # noqa: F841
 
 # Example usage
 rename_dates('folder_with_us_dates')
