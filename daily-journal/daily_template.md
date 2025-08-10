@@ -28,7 +28,7 @@
   -  
   -
 
-**Scipts**
+**Scripts**
 
 ## Challenges Faced
 
