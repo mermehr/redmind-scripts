@@ -67,7 +67,7 @@ No additional Python packages are required; the script uses only the Python stan
    ```bash
    ./daily_journal.py
    ```
-   This will create/open today’s journal entry in `ldaily/`.
+   This will create/open today’s journal entry in `daily/`.
 
 ## Notes
 
