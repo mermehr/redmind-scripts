@@ -1,4 +1,4 @@
-# custom-python-scripts
+# redmind-scripts
 
 A collection of personal and practice pentest scripts
 
