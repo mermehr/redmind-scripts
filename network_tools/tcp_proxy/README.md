@@ -52,11 +52,11 @@ python3 proxy.py 127.0.0.1 9000 example.com 80 True
     Edit the `request_handler(buffer)` function to inspect or alter data
     before sending it to the remote host.
 
--   **Response Modification**\
+- **Response Modification**\
     Edit the `response_handler(buffer)` function to manipulate responses
     before sending them back to the local client.
 
--   **Hexdump Utility**\
+- **Hexdump Utility**\
     The `hexdump()` function can be used independently for debugging
     payloads.
 
@@ -64,13 +64,11 @@ python3 proxy.py 127.0.0.1 9000 example.com 80 True
 
 ## Notes
 
--   The default buffer size for receiving data is **4096 bytes**. Adjust
-    if necessary for large payloads.
--   Connections automatically close when no more data is available from
-    either side.
--   Requires Python 3.x.
--   Intended for controlled lab environments (CTF, protocol analysis,
-    testing). **Do not use this against systems without authorisation.**
+- The default buffer size for receiving data is **4096 bytes**. Adjust if necessary for large payloads.
+- Connections automatically close when no more data is available from either side.
+- Requires Python 3.x.
+- Intended for controlled lab environments (CTF, protocol analysis,testing). 
+**Do not use this against systems without authorisation.**
 
 ------------------------------------------------------------------------
 
@@ -87,6 +85,6 @@ Do not use them against systems you do not own or have explicit permission to te
 
 ## Future Enhancements
 
--   Add logging to file for captured traffic.
--   Implement command-line switches for buffer size and verbosity.
--   Support UDP sockets in addition to TCP.
+- Add logging to file for captured traffic.
+- Implement command-line switches for buffer size and verbosity.
+- Support UDP sockets in addition to TCP.
