@@ -74,6 +74,17 @@ python3 proxy.py 127.0.0.1 9000 example.com 80 True
 
 ------------------------------------------------------------------------
 
+## Reference
+
+These scripts are adapted from exercises in  **Black Hat Python, 2nd Edition** by Justin Seitz & Tim Arnold.  
+
+They have been recreated here for personal study and educational purposes. The original book provides the full context, explanations, and ethical guidance for using these examples responsibly in security research.
+
+**Important:** These scripts are for *learning and testing only* in controlled environments.  
+Do not use them against systems you do not own or have explicit permission to test.
+
+---
+
 ## Future Enhancements
 
 -   Add logging to file for captured traffic.

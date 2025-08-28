@@ -1,4 +1,4 @@
-## Kali Tool Installer Script (`get-kali-tool.sh`)
+## Kali Tool Installer Script (`kali-tool.sh`)
 
 This script provides a smart, semi-safe way to install Kali Linux tools on a Linux Mint (or other Debian-based) system without pulling the entire Kali environment. It attempts the following:
 
@@ -27,5 +27,5 @@ Recommended for use on:
 ### Usage
 
 ```bash
-chmod +x get-kali-tool.sh
-sudo ./get-kali-tool.sh <tool-name>
+chmod +x kali-tool.sh
+sudo ./kali-tool.sh <tool-name>
