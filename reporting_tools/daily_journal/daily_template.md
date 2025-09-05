@@ -1,34 +1,6 @@
-**Focus Areas**: Python, HTB Academy
+**Focus Areas**:
 
 ---
-
-## HTB
-
-**Target Box:**
-
--
-
-**Challenges**
-
--
-
-**Penetration Tester Section:**
-
-- Module:
-  
-  -
-  -
-
-## Python
-
-**ATBS**
-
-- Chapter:
-- Pages: 0–0
-  -  
-  -
-
-**Scripts**
 
 ## Challenges Faced
 

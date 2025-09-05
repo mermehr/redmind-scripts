@@ -49,18 +49,22 @@ This script is designed to run cleanly from cron jobs or manual execution withou
    ```
 
 3. **Add the public key to GitHub**  
+   
    - Copy the key:  
-     ```bash
-     xclip -selection clipboard < ~/.ssh/id_ed25519.pub  # or: cat ~/.ssh/id_ed25519.pub
-     ```
+   
+   ```bash
+   xclip -selection clipboard < ~/.ssh/id_ed25519.pub  # or: cat ~/.ssh/id_ed25519.pub
+   ```
+   
    - GitHub → **Settings** → **SSH and GPG keys** → **New SSH key** → paste your public key.
-
+   
 4. **Switch your repo remote to SSH**  
+   
    ```bash
    git remote -v  # inspect current remotes
    git remote set-url origin git@github.com:<USER>/<REPO>.git
    ```
-
+   
 5. **Test connectivity**  
    ```bash
    ssh -T git@github.com
@@ -71,7 +75,8 @@ This script is designed to run cleanly from cron jobs or manual execution withou
 
 ## Using `keychain` + GTK Keyring (GNOME Keyring)
 
-`keychain` is a shell helper that manages a single long‑lived `ssh-agent` session and makes it available to your shells *and* cron jobs.  
+`keychain` is a shell helper that manages a single long‑lived `ssh-agent` session and makes it available to your shells *and* cron jobs. 
+
 GNOME Keyring (GTK keyring) can securely store your passphrase so you’re not prompted repeatedly.
 
 ### Install
@@ -85,6 +90,7 @@ sudo apt install keychain gnome-keyring seahorse
 ### Configure keychain at login
 
 Add the following to your shell init (choose one that your login session uses, e.g. `~/.bash_profile`, `~/.profile`, or `~/.bashrc`).  
+
 This will start (or reuse) a single `ssh-agent`, load your key, and write helper files under `~/.keychain/`.
 
 ```bash

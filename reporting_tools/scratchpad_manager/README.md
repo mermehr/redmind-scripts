@@ -87,12 +87,12 @@ scratchpad <command> [options] [name]
 
 ``` bash
 # create new project and activate it
-scratchpad init htb-bashed
+scratchpad init bashed
 
 # list projects
 scratchpad list
 # output:
-# htb-bashed *
+# bashed *
 
 # switch active project
 scratchpad link filetransfer
@@ -116,6 +116,4 @@ scratchpad shot
 
 ## Why Bash?
 
-This tool focuses on **filesystem + workflow glue**, which is simple, transparent, and robust in Bash.
-Python is excellent for parsing, logic, and building larger tools --- but for quick, direct system operations, Bash keeps it fast and
-predictable.
+This tool focuses on **filesystem + workflow glue**, which is simple, transparent, and robust in Bash. Python is excellent for parsing, logic, and building larger tools --- but for quick, direct system operations, Bash keeps it fast and predictable.
