@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/env python3
 # ssh_server.py - OS non-dependant SSH server
 import os
 import sys
@@ -17,11 +17,11 @@ class Server(paramiko.ServerInterface):
         if kind == 'session':
             return paramiko.OPEN_SUCCEEDED
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
-    
+
     def check_auth_password(self, username, password):
         if (username == 'tim') and (password == 'sekret'):
             return paramiko.AUTH_SUCCEDDFUL
-        
+
 if __name__ == '__main__':
     server = '192.168.56.101'
     ssh_port = 22
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         sys.exit(1)
     else:
         print('[+] Got a connection!', client, addr)
-    
+
     bhSession = paramiko.Transport(client)
     bhSession.add_server_key(HOSTKEY)
     server = Server()
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     if chan is None:
         print('*** No channel.')
         sys.exit(1)
-    
+
     print('[+] Authenticated!')
     print(chan.recv(1024))
     try:

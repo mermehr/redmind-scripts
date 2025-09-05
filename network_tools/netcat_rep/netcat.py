@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Python replacement script for netcat
 
 import argparse, socket, shlex, subprocess, sys, textwrap, threading
@@ -24,7 +25,7 @@ class NetCat:
         else:
             self.send()
 
-    # Connect to the target, if buffer exists then send    
+    # Connect to the target, if buffer exists then send
     def send(self):
         self.socket.connect((self.args.target, self.args.port))
         if self.buffer:
@@ -54,7 +55,7 @@ class NetCat:
             self.socket.close()
             sys.exit()
 
-    
+
     # Initialize the listener
     def listen(self):
         self.socket.bind((self.args.target, self.args.port)) # Bind target
@@ -107,12 +108,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser( # Create command line args
         description='BHP Net Tool',
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=textwrap.dedent('''Example: 
+        epilog=textwrap.dedent('''Example:
             netcat.py -t 192.168.1.101 -p 5555 -l -c # command shell
             netcat.py -t 192.168.1.101 -p 5555 -l -u=mytest.tst # upload a file
             netcat.py -t 192.168.1.101 -p 5555 -l -e\"cat /ect/passwd\" # execute a command
             echo 'ABC' | ./netcat.py -t 192.168.1.101 -p 135 # echo text to server port 135
-            netcat.py -t 192.168.1.101 -p 5555 # connect to server        
+            netcat.py -t 192.168.1.101 -p 5555 # connect to server
         '''))
     parser.add_argument('-c', '--command', action='store_true', help='command shell')
     parser.add_argument('-e', '--execute', help='execute specified command')
@@ -128,4 +129,3 @@ if __name__ == '__main__':
 
     nc = NetCat(args, buffer.encode())
     nc.run()
-                

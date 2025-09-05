@@ -1,4 +1,4 @@
-#/user/bin/python3
+#!/usr/bin/env python3
 # ssh_server.py - Script for sending command from an SSH server to a client
 import paramiko
 import shlex

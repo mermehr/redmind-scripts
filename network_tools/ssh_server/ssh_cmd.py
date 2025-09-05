@@ -1,4 +1,4 @@
-#/user/bin/python3
+#!/usr/bin/env python3
 # ssh_cmd.py - Script for sending command from a client to an SSH server
 import paramiko
 
@@ -13,7 +13,7 @@ def ssh_command(ip, port, user, passwd, cmd):
         print('--- Output ---')
         for line in output:
             print(line.strip())
-    
+
 if __name__ == '__main__':
     import getpass
     # user = getpass.getuser()

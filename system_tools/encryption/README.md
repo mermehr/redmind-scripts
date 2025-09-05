@@ -1,12 +1,12 @@
-# redmind-scripts/system_tools/encryption
+# Encryption
 
 Quick notes for scripts in `redmind-scripts/system_tools/encryption`.
 
 ## Scripts
 
-| Script                                                       | Language | Summary           |
-| ------------------------------------------------------------ | -------- | ----------------- |
-| `redmind-scripts/system_tools/encryption/xor_stream_reuse_recover.py` | python   | Recover keystream |
+| Script                        | Language | Summary           |
+| ----------------------------- | -------- | ----------------- |
+| `xor_stream_reuse_recover.py` | python   | Recover keystream |
 
 ## Usage
 

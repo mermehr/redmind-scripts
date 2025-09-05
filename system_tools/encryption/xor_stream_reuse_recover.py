@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from Crypto.Util.strxor import strxor
 from binascii import unhexlify
 import argparse

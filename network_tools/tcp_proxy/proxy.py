@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import socket
 import threading
@@ -20,7 +21,7 @@ def hexdump(src, length=16, show=True):
             print(line)
         else:
             return results
-    
+
 
 def receive_from(connection):
     buffer = b""
@@ -123,7 +124,7 @@ def main():
         receive_first = True
     else:
         receive_first = False
-    
+
     server_loop(local_host, local_port, remote_host, remote_port, receive_first)
 
 if __name__ == '__main__':
