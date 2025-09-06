@@ -23,4 +23,4 @@ This repo is meant as a personal toolbox and reference; if you stumbled in here,
 
 ## Changelog
 
-- 2025-08-31 13:48: auto‑generated README refresh (script index + SSH/keychain notes).
+- 2025-09-06 13:48: auto‑generated README refresh (script index + SSH/keychain notes).
